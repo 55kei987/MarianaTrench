@@ -57,7 +57,6 @@ public class PlayerController : MonoBehaviour
 
         PostProcessVolume.enabled = isInwater;
         waterUI.SetActive(isInwater);
-        waterTransform.transform.GetChild(0).gameObject.SetActive(!isInwater);
         particle.SetActive(isInwater);
         float x = rb.position.x;
         waterTransform.position = new Vector3(x, 0, rb.position.z);
